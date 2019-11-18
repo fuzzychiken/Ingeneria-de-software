@@ -1,0 +1,9 @@
+<form [formGroup]="formRecuperar" *ngIf="formRecuperar">
+    <label>
+    Email:
+    <input type="text" pInputText formControlName="email">
+    </label>
+</form>
+<div>
+<button pButton type="button" iconPos="center" label="Enviar correo"></button>
+</div>

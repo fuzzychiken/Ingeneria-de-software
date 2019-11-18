@@ -1,0 +1,19 @@
+<form [formGroup]="formRegistro" *ngIf="formRegistro">
+    <label>
+    Nombre:
+    <input type="text" pInputText formControlName="usuario">
+    </label>
+
+    <label>
+    Contraseña:
+    <input type="text" pInputText formControlName="contraseña">
+    </label>
+
+    <label>
+    Email:
+    <input type="text" pInputText formControlName="email">
+    </label>
+</form>
+<div>
+<button pButton type="button" iconPos="center" label="Registrarse"></button>
+</div>

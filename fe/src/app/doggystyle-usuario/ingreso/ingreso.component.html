@@ -1,0 +1,15 @@
+<form [formGroup]="formIngreso" *ngIf="formIngreso">
+    <label>
+    Nombre:
+    <input type="text" pInputText formControlName="usuario">
+    </label>
+
+    <label>
+    Contraseña:
+    <input type="text" pInputText formControlName="contraseña">
+    </label>
+</form>
+<div>
+<button pButton type="button" iconPos="center" label="Ingresar"></button>
+</div>
+
