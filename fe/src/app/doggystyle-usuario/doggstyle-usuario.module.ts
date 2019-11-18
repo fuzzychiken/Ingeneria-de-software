@@ -2,6 +2,8 @@ import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { ButtonModule} from 'primeng/button';
+
 import { DoggstyleUsuarioComponent }    from './usuario/doogstyle-usuario.component';
 import { IngresoComponent }  from './ingreso/ingreso.component';
 import { RegistroComponent }    from './registro/registro.component';
@@ -12,6 +14,7 @@ import { DoogystyleUsuarioRoutingModule }       from './doggstyle-usuario-routin
 @NgModule({
   imports: [
     CommonModule,
+    ButtonModule,
     DoogystyleUsuarioRoutingModule,
     ReactiveFormsModule
   ],

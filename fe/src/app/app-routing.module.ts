@@ -4,12 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [
   {
     path: 'doggystyle-usuario',
-    loadChildren: () => import('./doggystyle-usuario/doggstyle-usuario.module').then(mod => mod.DoogystyleUsuarioModule),
+    loadChildren: "./doggystyle-usuario/doggstyle-usuario.module"
   },
   {
     path: 'doggystyle-pantalla-inicial',
-    loadChildren: () => import('./doggystyle-panatalla-inicial/doggystyle-pantalla-inicial.module').then(mod => mod.PantallInicialModule),
-  }
+    loadChildren:'./doggystyle-panatalla-inicial/doggystyle-pantalla-inicial.module'
+  },
 ];
 
 @NgModule({

@@ -6,7 +6,7 @@ import { IngresoComponent }  from './ingreso/ingreso.component';
 import { RegistroComponent }    from './registro/registro.component';
 import { RecuperarContraseñaComponent }    from './recuperar-contraseña/recuperar-contraseña.component';
 
-const doogystyleUsuarioRoutingModule: Routes = [
+const doogystyleUsuarioRoutes: Routes = [
   {
     path: '',
     component: DoggstyleUsuarioComponent,
@@ -14,9 +14,8 @@ const doogystyleUsuarioRoutingModule: Routes = [
       {
         path: '',
         children: [
-          { path: 'ingreso', component: IngresoComponent },
-          { path: 'registro', component: RegistroComponent },
-          { path: 'recuperar', component: RecuperarContraseñaComponent },
+          { path: '', component: IngresoComponent },
+          { path: './registro', component: RegistroComponent },
         ]
       }
     ]
@@ -25,7 +24,7 @@ const doogystyleUsuarioRoutingModule: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(doogystyleUsuarioRoutingModule)
+    RouterModule.forChild(doogystyleUsuarioRoutes)
   ],
   exports: [
     RouterModule
